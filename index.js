@@ -7,8 +7,6 @@ const MaxPage = 5;
 let pastData = [];
 localStorage.clear();
 
-// const axios = require("axios");
-
 // PETICION CON XMLHttpRequest
 
 // function getDataXHR() {
@@ -42,7 +40,6 @@ localStorage.clear();
 // PETICION CON axios
 
 function getDataAxios(url) {
-  console.log(url)
   return axios.get(url).then(response => response.data);
 }
 
